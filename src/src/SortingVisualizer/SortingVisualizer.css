@@ -1,0 +1,93 @@
+.array-container{
+    height: max-content;
+    width: max-content;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.array-bar{
+    width: 5px;
+    background-color: rgb(89, 198, 212);
+    display: inline-block;
+    margin:0 1px;
+}
+
+.bars{
+    align-items: center;
+    height: 100px;
+    width: 1px;
+    background-color: aquamarine;
+}
+
+body{
+    background-image: url('image.jpg');
+}
+
+h1{
+    text-align :center;
+    margin-top:2.5ex ;
+    margin-bottom: 1ex;
+    margin-right: 1.5ex;
+    color : rgb(168, 211, 224);
+    font-style: italic;
+    font-family:cursive;
+}
+  
+.btn {
+    position: relative;
+    color: rgba(209, 211, 219, 0.925)!important;
+    padding: auto!important;
+    white-space: normal!important;
+    border-color: rgb(153, 230, 230)!important;
+    cursor: pointer;
+    border-style: solid!important;
+    margin-left: 1ex;
+    margin-right: 1ex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  } 
+
+
+.btn-new-array:hover{
+ background-color: rgb(2, 34, 7);
+}
+.btn-bubble-sort:hover{
+ background-color: rgb(36, 26, 29);
+}
+.btn-insertion-sort:hover{
+ background-color: rgb(36, 26, 29);
+}
+.btn-selection-sort:hover{
+ background-color: rgb(36, 26, 29);
+}
+.btn-merge-sort:hover{
+ background-color: rgb(36, 26, 29);
+}
+.btn-quick-sort:hover{
+ background-color: rgb(36, 26, 29);
+}
+
+.app-footer {
+    display: flex;
+    overflow-x: auto;
+    margin-top: auto;
+  }
+
+  .app-footer ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    white-space: nowrap;
+  }
+
+  .visualizer-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-right: 50px;
+  }
+  
+  @media (min-width: 700px) {
+    .app-footer {
+      justify-content: center;
+    }
+  }
