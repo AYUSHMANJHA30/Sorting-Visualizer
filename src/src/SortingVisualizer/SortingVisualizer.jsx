@@ -7,9 +7,11 @@ import { getMergeSortAnimations } from '../algorithms/MergeSort';
 const ARR_LEN = 80;
 const MIN_NUM = 5;
 const MAX_NUM = 75;
-const DELAY = 10;
+const DELAY = 15;
 const ACCESSED_COLOUR = 'pink';
 const SORTED_COLOUR = 'white';
+const ALREADY_SORTED_COLOUR='green'
+
 
 export default function SortVisualizer(props) {
   const [arr, setArr] = useState([]);
@@ -82,7 +84,7 @@ export default function SortVisualizer(props) {
       arrayBarStyle.backgroundColor = ACCESSED_COLOUR;
     }, DELAY);
     setTimeout(() => {
-      arrayBarStyle.backgroundColor = '';
+      arrayBarStyle.backgroundColor=ALREADY_SORTED_COLOUR;
     }, DELAY * 2);
   }
 
