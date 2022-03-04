@@ -50,13 +50,7 @@ h1{
 .btn-new-array:hover{
  background-color: rgb(2, 34, 7);
 }
-.btn-bubble-sort:hover{
- background-color: rgb(36, 26, 29);
-}
 .btn-insertion-sort:hover{
- background-color: rgb(36, 26, 29);
-}
-.btn-selection-sort:hover{
  background-color: rgb(36, 26, 29);
 }
 .btn-merge-sort:hover{
