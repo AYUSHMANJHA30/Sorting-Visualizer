@@ -4,13 +4,13 @@ import { getQuickSortAnimations } from '../algorithms/QuickSort';
 import { getInsertionSortAnimations } from '../algorithms/InsertionSort';
 import { getMergeSortAnimations } from '../algorithms/MergeSort';
 
-const ARR_LEN = 80;
+const ARR_LEN = 100;
 const MIN_NUM = 5;
 const MAX_NUM = 75;
 const DELAY = 15;
 const ACCESSED_COLOUR = 'pink';
 const SORTED_COLOUR = 'white';
-const ALREADY_SORTED_COLOUR='green'
+const ALREADY_SORTED_COLOUR='green';
 
 
 export default function SortVisualizer(props) {
@@ -84,8 +84,8 @@ export default function SortVisualizer(props) {
       arrayBarStyle.backgroundColor = ACCESSED_COLOUR;
     }, DELAY);
     setTimeout(() => {
-      arrayBarStyle.backgroundColor=ALREADY_SORTED_COLOUR;
-    }, DELAY * 2);
+      arrayBarStyle.backgroundColor='';
+    }, DELAY * 5);
   }
 
   function animateSortedArray() {
@@ -111,7 +111,7 @@ export default function SortVisualizer(props) {
     }
   }
 
-  return (
+ return (
     <div className="visualizer-container">
       <div className="array-container" ref={containerRef}>
         {arr.map((barHeight, index) => (
@@ -119,7 +119,7 @@ export default function SortVisualizer(props) {
             className="array-bar"
             style={{
               height: `${barHeight}vmin`,
-              width: `${100 / ARR_LEN}vw`,
+              width: `${100/ARR_LEN}vw`,
             }}
             key={index}
           ></div>
@@ -138,7 +138,7 @@ export default function SortVisualizer(props) {
             </button>
           </li>
           <li>
-            <button className="btn btn-selection-sort" onClick={insertionSort}>
+            <button className="btn btn-insertion-sort" onClick={insertionSort}>
               Insertion sort
             </button>
           </li>
@@ -161,33 +161,3 @@ const shuffle = (arr) => {
     arr[randomIndex] = temp;
   }
 };
-
-/*const NUMBER_OF_ARRAY_BARS=100;
-const ANIMATION_SPEED=2;
-const PRIMARY_COLOR='pink';
-const SECONDARY_COLOR='white';
-
-export default class SortingVisualizer extends React.Component{
-    constructor(props){
-        super(props);
-        this.state={
-            array:[],
-        };
-    }
-
-
-componentDidMount() {
-    this.resetArray();
-}
-
-resetArray(){
-    const array=[];
-    for(let i=0;i<NUMBER_OF_ARRAY_BARS;i++){
-        array.push(randomNumbersFrom(5,500));
-    }
-    this.setState({array});
-}
-function randomNumbersFrom(min,max){
-    return Math.floor(Math.random()*(max-min+1)+min);
-}
-*/
