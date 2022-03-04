@@ -1,23 +1,18 @@
 .array-container{
-    height: max-content;
-    width: max-content;
-    margin-top: 50px;
-    margin-right: 50px;
+  align-items: center;
+  display: flex;
+  margin-top: auto;
+  width:max-content;
 }
 
 .array-bar{
-    width: 5px;
     background-color: rgb(89, 198, 212);
     display: inline-block;
     margin:0 1px;
+    border-radius: 0.5em;
+    margin: 0.15%;
 }
 
-.bars{
-    align-items: center;
-    height: 100px;
-    width: 1px;
-    background-color: aquamarine;
-}
 
 body{
     background-image: url('image.jpg');
@@ -48,30 +43,30 @@ h1{
 
 
 .btn-new-array:hover{
- background-color: rgb(2, 34, 7);
+ background-color: rgb(4, 118, 133);
 }
 .btn-insertion-sort:hover{
- background-color: rgb(36, 26, 29);
+ background-color: rgb(4, 118, 133);
 }
 .btn-merge-sort:hover{
- background-color: rgb(36, 26, 29);
+ background-color:rgb(4, 118, 133);
 }
 .btn-quick-sort:hover{
- background-color: rgb(36, 26, 29);
+ background-color: rgb(4, 118, 133);
 }
 
 .app-footer {
-    display: flex;
-    overflow-x: auto;
-    margin-top: auto;
-  }
+  display: flex;
+  overflow-x: auto;
+  margin-top: auto;
+}
 
-  .app-footer ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    white-space: nowrap;
-  }
+.app-footer ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  white-space: nowrap;
+}
 
   .visualizer-container {
     display: flex;
